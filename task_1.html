@@ -5,75 +5,15 @@
   <title>Conference Registration Form</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Times New Roman', Times, serif, sans-serif;
       margin: 30px;
-      background-color: #f4f4f9;
-      color: #333;
     }
-
-    h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #3498db;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
     form {
-      width: 450px;
-      background-color: #ffffff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
     }
-
-    label {
-      font-weight: 600;
-      display: block;
-      margin-top: 15px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    select,
     textarea {
       width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
-    }
-
-    textarea {
-      height: 70px;
-    }
-
-    input[type="radio"],
-    input[type="checkbox"] {
-      margin-right: 8px;
-    }
-
-    .form-group {
-      margin-top: 10px;
-    }
-
-    input[type="submit"],
-    input[type="reset"] {
-      background-color: #3498db;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 20px;
-      margin-right: 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    input[type="submit"]:hover,
-    input[type="reset"]:hover {
-      background-color: #2980b9;
+      height: 60px;
     }
   </style>
 </head>
@@ -82,55 +22,49 @@
   <h2><b>Conference Registration Form</b></h2>
 
   <form>
-    <label for="fullname">Full Name:</label>
-    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" min="18" max="99" value="18" required>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="18" max="99" value="18" required><br><br>
 
-    <label>Gender:</label>
-    <div class="form-group">
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
-    </div>
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
 
-    <label for="country">Country of Residence:</label>
+    <label for="country">Country of Residence:</label><br>
     <select id="country" name="country">
       <option value="Malaysia">Malaysia</option>
       <option value="Singapore">Singapore</option>
       <option value="Indonesia">Indonesia</option>
       <option value="Other">Other</option>
-    </select>
+    </select><br><br>
 
-    <label>Areas of Interest:</label>
-    <div class="form-group">
-      <input type="checkbox" id="sd" name="interest" value="Software Development">
-      <label for="sd">Software Development</label><br>
-      <input type="checkbox" id="ds" name="interest" value="Data Science">
-      <label for="ds">Data Science</label><br>
-      <input type="checkbox" id="cs" name="interest" value="Cybersecurity">
-      <label for="cs">Cybersecurity</label><br>
-      <input type="checkbox" id="ai" name="interest" value="Artificial Intelligence">
-      <label for="ai">Artificial Intelligence</label>
-    </div>
+    <label>Areas of Interest:</label><br>
+    <input type="checkbox" id="sd" name="interest" value="Software Development">
+    <label for="sd">Software Development</label><br>
+    <input type="checkbox" id="ds" name="interest" value="Data Science">
+    <label for="ds">Data Science</label><br>
+    <input type="checkbox" id="cs" name="interest" value="Cybersecurity">
+    <label for="cs">Cybersecurity</label><br>
+    <input type="checkbox" id="ai" name="interest" value="Artificial Intelligence">
+    <label for="ai">Artificial Intelligence</label><br><br>
 
-    <label>Experience Level:</label>
-    <div class="form-group">
-      <input type="radio" id="beginner" name="experience" value="Beginner">
-      <label for="beginner">Beginner</label>
-      <input type="radio" id="intermediate" name="experience" value="Intermediate">
-      <label for="intermediate">Intermediate</label>
-      <input type="radio" id="advanced" name="experience" value="Advanced">
-      <label for="advanced">Advanced</label>
-    </div>
+    <label>Experience Level:</label><br>
+    <input type="radio" id="beginner" name="experience" value="Beginner">
+    <label for="beginner">Beginner</label><br>
+    <input type="radio" id="intermediate" name="experience" value="Intermediate">
+    <label for="intermediate">Intermediate</label><br>
+    <input type="radio" id="advanced" name="experience" value="Advanced">
+    <label for="advanced">Advanced</label><br><br>
 
-    <label for="comments">Comments or Questions:</label>
-    <textarea id="comments" name="comments" placeholder="Any comments or questions?"></textarea>
+    <label for="comments">Comments or Questions:</label><br>
+    <textarea id="comments" name="comments" placeholder="Any comments or questions?"></textarea><br><br>
 
     <input type="submit" value="Register">
     <input type="reset" value="Reset">
