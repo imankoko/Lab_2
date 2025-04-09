@@ -1,95 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Task 1 - Personal Info</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            padding: 8px;
-        }
-        table {
-            width: 80%;
-            margin: 20px auto;
-        }
-        img {
-            width: 100px;
-            height: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Conference Registration Form</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 30px;
+    }
+    form {
+      width: 400px;
+    }
+    textarea {
+      width: 100%;
+      height: 60px;
+    }
+  </style>
 </head>
 <body>
 
-    <h2 align="center">My Personal Web Page</h2>
+  <h2><b>Conference Registration Form</b></h2>
 
-    <table>
-        <tr>
-            <td><strong>Name</strong></td>
-            <td>Muhammad Muaz Ramzi Bin Mohamad Ramzi</td>
-            <td rowspan="4" align="center">
-                <img src="resume.jpg" alt="Your Photo">
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Date of birth</strong></td>
-            <td>01 January 2004</td>
-        </tr>
-        <tr>
-            <td><strong>Religion</strong></td>
-            <td>Islam</td>
-        </tr>
-        <tr>
-            <td><strong>Race</strong></td>
-            <td>Malay</td>
-        </tr>
-        <tr>
-            <td rowspan="4"><strong>Address</strong></td>
-            <td><strong>Street</strong></td>
-            <td>69, Taman Universiti</td>
-        </tr>
-        <tr>
-            <td><strong>Town</strong></td>
-            <td>Batu Pahat</td>
-        </tr>
-        <tr>
-            <td><strong>District</strong></td>
-            <td>Parit raja</td>
-        </tr>
-        <tr>
-            <td><strong>State</strong></td>
-            <td>416000</td>
-        </tr>
-        <tr>
-            <td rowspan="3"><strong>Contact</strong></td>
-            <td><strong>Mobile Phone</strong></td>
-            <td>018-9199054</td>
-        </tr>
-        <tr>
-            <td><strong>Social Media</strong></td>
-            <td><a href="https://www.instagram.com/mmrbmr_?igsh=MW1oOGNvdWxuMDczbg==" target="_blank">instagram</a></td>
-        </tr>
-        <tr>
-            <td><strong>Website</strong></td>
-            <td><a href="https://www.youtube.com/@muazramzi3143" target="_blank">Youtube</a></td>
-        </tr>
-        <tr>
-            <td><strong>Course and Institution</strong></td>
-            <td colspan="2">BIT, UTHM</td>
-        </tr>
-        <tr>
-            <td><strong>Programming skills</strong></td>
-            <td colspan="2">HTML, CSS, Python</td>
-        </tr>
-        <tr>
-            <td><strong>Hobbies</strong></td>
-            <td colspan="2">Sleep, Futsal</td>
-        </tr>
-        <tr>
-            <td><strong>2025 Wishlist</strong></td>
-            <td colspan="2">Be Better than last year</td>
-        </tr>
-    </table>
+  <form>
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="18" max="99" value="18" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="country">Country of Residence:</label><br>
+    <select id="country" name="country">
+      <option value="Malaysia">Malaysia</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+
+    <label>Areas of Interest:</label><br>
+    <input type="checkbox" id="sd" name="interest" value="Software Development">
+    <label for="sd">Software Development</label><br>
+    <input type="checkbox" id="ds" name="interest" value="Data Science">
+    <label for="ds">Data Science</label><br>
+    <input type="checkbox" id="cs" name="interest" value="Cybersecurity">
+    <label for="cs">Cybersecurity</label><br>
+    <input type="checkbox" id="ai" name="interest" value="Artificial Intelligence">
+    <label for="ai">Artificial Intelligence</label><br><br>
+
+    <label>Experience Level:</label><br>
+    <input type="radio" id="beginner" name="experience" value="Beginner">
+    <label for="beginner">Beginner</label><br>
+    <input type="radio" id="intermediate" name="experience" value="Intermediate">
+    <label for="intermediate">Intermediate</label><br>
+    <input type="radio" id="advanced" name="experience" value="Advanced">
+    <label for="advanced">Advanced</label><br><br>
+
+    <label for="comments">Comments or Questions:</label><br>
+    <textarea id="comments" name="comments" placeholder="Any comments or questions?"></textarea><br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+  </form>
 
 </body>
 </html>
